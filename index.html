@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Grandmoon Studio — Photography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <input type="checkbox" id="navCheck" class="nav-check">
+
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+
+  <img 
+    src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/studiologo.png" 
+    alt="The Grandmoon Studio Logo" 
+    class="brand-logo"
+  >
+
+  <span class="brand-text">
+
+    <span class="brand-name">
+      The Grandmoon Studio
+    </span>
+
+    <span class="brand-since">
+      Since 2022
+    </span>
+
+  </span>
+
+</a>
+    
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#films">Films</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="https://youtube.com/@thegrandmoonstudio?si=EfByBzg2seG0IhOf" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12Z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/share/1aKahs914o/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M13.5 21v-7.9h2.65l.4-3.08H13.5V8.05c0-.89.25-1.5 1.52-1.5h1.63V3.8C16.35 3.75 15.34 3.66 14.16 3.66c-2.44 0-4.11 1.49-4.11 4.23v2.36H7.4v3.08h2.65V21Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/the_grandmoon_studio?stkn=MTVvbWJtOXdlbXZqMg==" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 2c-2.7 0-3.05.01-4.12.06-1.06.05-1.79.22-2.43.47-.66.26-1.22.6-1.77 1.16-.56.55-.9 1.11-1.16 1.77-.25.64-.42 1.37-.47 2.43C2 8.95 2 9.3 2 12s.01 3.05.06 4.12c.05 1.06.22 1.79.47 2.43.26.66.6 1.22 1.16 1.77.55.56 1.11.9 1.77 1.16.64.25 1.37.42 2.43.47C8.95 22 9.3 22 12 22s3.05-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47.66-.26 1.22-.6 1.77-1.16.56-.55.9-1.11 1.16-1.77.25-.64.42-1.37.47-2.43C22 15.05 22 14.7 22 12s-.01-3.05-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.16-1.77 4.9 4.9 0 0 0-1.77-1.16c-.64-.25-1.37-.42-2.43-.47C15.05 2 14.7 2 12 2Zm0 1.8c2.65 0 2.97.01 4.02.06.97.04 1.5.2 1.85.34.46.18.8.4 1.15.75.35.35.57.68.75 1.15.14.35.3.88.34 1.85.05 1.05.06 1.37.06 4.02s-.01 2.97-.06 4.02c-.04.97-.2 1.5-.34 1.85-.18.46-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.14-.88.3-1.85.34-1.05.05-1.37.06-4.02.06s-2.97-.01-4.02-.06c-.97-.04-1.5-.2-1.85-.34a3.1 3.1 0 0 1-1.15-.75 3.1 3.1 0 0 1-.75-1.15c-.14-.35-.3-.88-.34-1.85C3.81 14.97 3.8 14.65 3.8 12s.01-2.97.06-4.02c.04-.97.2-1.5.34-1.85.18-.46.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.14.88-.3 1.85-.34C9.03 3.81 9.35 3.8 12 3.8Zm0 3.25a4.95 4.95 0 1 0 0 9.9 4.95 4.95 0 0 0 0-9.9Zm0 8.17a3.22 3.22 0 1 1 0-6.44 3.22 3.22 0 0 1 0 6.44Zm5.15-8.36a1.16 1.16 0 1 1-2.31 0 1.16 1.16 0 0 1 2.31 0Z"/></svg>
+          </a>
+    </nav>
+
+    <label class="nav-toggle" for="navCheck" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+
+  <!-- HERO BACKGROUND SLIDER -->
+  <div class="hero-slider" aria-hidden="true">
+
+    <div class="hero-slide active">
+      <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/hero.jpg" alt="">
+    </div>
+
+    <div class="hero-slide">
+      <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/hire.jpg" alt="">
+    </div>
+
+    <div class="hero-slide">
+      <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/raw.jpg" alt="">
+    </div>
+
+    <div class="hero-slide">
+      <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/image.jpg" alt="">
+    </div>
+
+  </div>
+
+  <!-- DARK OVERLAY -->
+  <div class="hero-overlay"></div>
+
+  <!-- EXISTING HERO CONTENT -->
+  <div class="hero-content">
+
+    <p class="eyebrow">Cinematography Studio</p>
+
+    <h1>
+      Every frame,<br>
+      a phase of light.
+    </h1>
+
+    <p class="hero-sub">
+      The Grandmoon Studio captures portraits, weddings &amp; stories
+      <br class="br-desktop">
+      that hold still long after the moment has passed.
+    </p>
+
+    <div class="hero-cta">
+
+      <a
+  href="https://wa.me/919153734410?text=Hello%20The%20Grandmoon%20Studio%2C%20I%20would%20like%20to%20book%20a%20session.%20Please%20share%20your%20packages%2C%20availability%20and%20pricing.%20Thank%20you!"
+  class="btn book-session-btn"
+  target="_blank"
+  rel="noopener"
+>
+  Book a Session
+</a>
+
+    </div>
+
+  </div>
+
+  <!-- SLIDER INDICATORS -->
+  <div class="hero-slider-dots" aria-label="Hero image slider">
+
+    <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+
+    <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+
+    <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+
+    <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+
+  </div>
+
+</section>
+
+<!-- ===== MOON DIVIDER 1 ===== -->
+<div class="phase-divider" aria-hidden="true">
+  <span class="phase-label">waxing</span>
+  <div class="phase-line"></div>
+  <span class="moon-icon moon-waxing"></span>
+</div>
+
+    <!-- ===== WORK / PORTFOLIO ===== -->
+<section class="work" id="work">
+
+  <div class="work-container">
+
+    <div class="section-head">
+      <p class="eyebrow">Selected Work</p>
+      <h2>Moments we've held onto</h2>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <!-- 1. LANDSCAPE -->
+      <a href="ajay-puja.html" class="portfolio-box landscape">
+        <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Couple.jpg" alt="Ajay & Puja Wedding">
+        <div class="portfolio-title">
+          <span>Wedding</span>
+          <strong>Couples</strong>
+        </div>
+      </a>
+
+
+      <!-- 2. PORTRAIT -->
+      <a href="birthday.html" class="portfolio-box portrait">
+        <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Birthday.jpg" alt="Birthday Photography">
+        <div class="portfolio-title">
+          <span>Birthday</span>
+          <strong>Photography</strong>
+        </div>
+      </a>
+
+
+      <!-- 3. PORTRAIT -->
+      <a href="albums.html" class="portfolio-box portrait">
+        <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Albums.jpg" alt="Wedding Albums">
+        <div class="portfolio-title">
+          <span>Albums</span>
+          <strong>Wedding Albums</strong>
+        </div>
+      </a>
+
+
+      <!-- 4. LANDSCAPE -->
+      <a href="commerecial.html" class="portfolio-box landscape">
+        <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Com%202.jpg" alt="Commercial Photography">
+        <div class="portfolio-title">
+          <span>Commercial</span>
+          <strong>Photography</strong>
+        </div>
+      </a>
+
+
+      <!-- 5. LANDSCAPE -->
+      <a href="potrait2.html" class="portfolio-box landscape">
+        <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/cand5.jpg" alt="Candid Photography">
+        <div class="portfolio-title">
+          <span>Candid</span>
+          <strong>Photography</strong>
+        </div>
+      </a>
+
+
+      <!-- 6. PORTRAIT -->
+      <a href="#" class="portfolio-box portrait">
+        <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/hire.jpg" alt="Family Photography">
+        <div class="portfolio-title">
+          <span>Family</span>
+          <strong>Photography</strong>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+    
+
+<!-- ===== MOON DIVIDER — FILMS ===== -->
+<div class="phase-divider" aria-hidden="true">
+  <span class="phase-label">gibbous</span>
+  <div class="phase-line"></div>
+  <span class="moon-icon moon-full"></span>
+</div>
+
+<!-- ===== FILMS ===== -->
+<section class="films" id="films">
+  <div class="section-head">
+    <p class="eyebrow">Films</p>
+    <h2>Handcrafted, not just filmed</h2>
+    <p class="section-sub">Every wedding film is cut in-house — cinematic, emotional, and true to how the day actually felt.</p>
+  </div>
+  <div class="film-feature">
+    <div class="film-video">
+      <!-- Replace VIDEO_ID below with your own YouTube video ID (the part after watch?v= in your video's URL) -->
+     <iframe
+  width="100%"
+  height="500"
+  src="https://youtu.be/KqAhCaiw3d0?si=wNrBrXKyD1DDG6eh"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MOON DIVIDER 2 ===== -->
+<div class="phase-divider" aria-hidden="true">
+  <span class="phase-label">full</span>
+  <div class="phase-line"></div>
+  <span class="moon-icon moon-full"></span>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="about-image">
+    <img src="https://picsum.photos/id/177/900/1100" alt="Photographer at work">
+  </div>
+  <div class="about-content">
+    <p class="eyebrow">About the Studio</p>
+    <h2>Light doesn't wait.<br>Neither do we.</h2>
+    <p>The Grandmoon Studio was founded by <strong>Rajdeep Bhatri</strong>, who has been shooting weddings for 6 years and has covered 100+ weddings across the country. What started as wedding photography has grown into a full-service studio for every kind of celebration.</p>
+    <p>From candid wedding photography and cinematic films to drone coverage, album designing, video mixing, and podcast shoots — we handle the entire story, start to finish, in-house.</p>
+    <div class="about-stats">
+      <div class="stat">
+        <span class="stat-num">100+</span>
+        <span class="stat-label">Weddings Covered</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">6</span>
+        <span class="stat-label">Years Behind the Lens</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">360°</span>
+        <span class="stat-label">Full Event Coverage</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MOON DIVIDER 3 ===== -->
+<div class="phase-divider" aria-hidden="true">
+  <span class="phase-label">waning</span>
+  <div class="phase-line"></div>
+  <span class="moon-icon moon-waning"></span>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+
+  <div class="services-container">
+
+    <!-- SERVICES HEADING -->
+    <div class="section-head">
+      <p class="eyebrow">What We Do</p>
+      <h2>Our Services</h2>
+    </div>
+
+
+    <!-- SERVICES GRID -->
+    <div class="services-grid">
+
+
+      <!-- ================= SERVICE 1 ================= -->
+      <div class="service-card">
+
+        <div class="service-image">
+          <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Videographer.jpg" alt="Wedding Photography">
+        </div>
+
+        <div class="service-content">
+
+          <h1>Wedding Photography</h1>
+
+          <p>
+            We capture every emotion, tradition and beautiful moment
+            of your wedding day with natural and cinematic photography.
+            From candid moments to important family memories,
+            every frame is carefully captured.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= SERVICE 2 ================= -->
+      <div class="service-card">
+
+        <div class="service-image">
+          <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Cinematographer.jpg" alt="Cinematic Wedding Films">
+        </div>
+
+        <div class="service-content">
+
+          <h1>Cinematic Films</h1>
+
+          <p>
+            Your wedding story deserves to feel like a film.
+            We create cinematic wedding films with emotional storytelling,
+            beautiful visuals, music and carefully edited sequences.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= SERVICE 3 ================= -->
+      <div class="service-card">
+
+        <div class="service-image">
+          <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Drone.jpg" alt="Drone Photography">
+        </div>
+
+        <div class="service-content">
+
+          <h1>Drone Coverage</h1>
+
+          <p>
+            Capture your special moments from a completely different
+            perspective with professional aerial photography and
+            cinematic drone coverage.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= SERVICE 4 ================= -->
+      <div class="service-card">
+
+        <div class="service-image">
+          <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Designer.jpg" alt="Wedding Album Designing">
+        </div>
+
+        <div class="service-content">
+
+          <h1>Album Designing</h1>
+
+          <p>
+            We design premium wedding albums that preserve your
+            memories beautifully. Every page is designed with
+            attention to photographs, emotions and storytelling.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= SERVICE 5 ================= -->
+      <div class="service-card">
+
+        <div class="service-image">
+          <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Video%20Mixing.jpg" alt="Video Editing">
+        </div>
+
+        <div class="service-content">
+
+          <h1>Video Editing</h1>
+
+          <p>
+            From wedding highlights to complete event films,
+            our editing process combines music, storytelling,
+            colour grading and cinematic transitions.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= SERVICE 6 ================= -->
+      <div class="service-card">
+
+        <div class="service-image">
+          <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Podcast%20Studio.jpg" alt="Podcast Shoot">
+        </div>
+
+        <div class="service-content">
+
+          <h1>Podcast Shoots</h1>
+
+          <p>
+            Professional multi-camera podcast shoots with
+            clean visuals, proper framing and high-quality
+            video production for creators and businesses.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===== MOON DIVIDER 4 ===== -->
+<div class="phase-divider" aria-hidden="true">
+  <span class="phase-label">new</span>
+  <div class="phase-line"></div>
+  <span class="moon-icon moon-new"></span>
+</div>
+
+<!-- ===== TEAM ===== -->
+<section class="team" id="team">
+  <div class="section-head">
+    <p class="eyebrow">The People Behind It</p>
+    <h2>Who you'll actually meet</h2>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-image">
+        <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/rajdeeep.jpeg" alt="Rajdeep Bhatri, Founder">
+      </div>
+      <h3>Rajdeep Bhatri</h3>
+      <span class="team-role">Founder</span>
+      <p>Shooting weddings for 6 years, with 100+ weddings covered — Rajdeep leads every shoot personally, from first frame to final delivery.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-image">
+        <img src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Rakesh.jpeg" alt="Rakesh Arya, Manager and Editor">
+      </div>
+      <h3>Rakesh Arya</h3>
+      <span class="team-role">Manager &amp; Editor</span>
+      <p>Rakesh manages the studio and edits every film and album in-house, shaping raw footage into the final story.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MOON DIVIDER 5 ===== -->
+<div class="phase-divider" aria-hidden="true">
+  <span class="phase-label">waxing again</span>
+  <div class="phase-line"></div>
+  <span class="moon-icon moon-waxing"></span>
+</div>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonials">
+  <div class="section-head">
+    <p class="eyebrow">Kind Words</p>
+    <h2>What couples say</h2>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p class="testimonial-quote">Replace this with a real quote from one of your couples — keep it short and specific to what they loved.</p>
+      <span class="testimonial-name">Couple Name</span>
+      <span class="testimonial-loc">Wedding Location</span>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-quote">Replace this with a real quote from one of your couples — keep it short and specific to what they loved.</p>
+      <span class="testimonial-name">Couple Name</span>
+      <span class="testimonial-loc">Wedding Location</span>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-quote">Replace this with a real quote from one of your couples — keep it short and specific to what they loved.</p>
+      <span class="testimonial-name">Couple Name</span>
+      <span class="testimonial-loc">Wedding Location</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <p class="eyebrow">Get in Touch</p>
+    <h2>Let's plan your next shoot.</h2>
+    <p class="contact-sub">Tell us the date, the place, and the people — we'll take care of the light.</p>
+    <a href="mailto:thegrandmoonstudio@gmail.com" class="contact-email">thegrandmoonstudio@gmail.com</a>
+    <div class="contact-meta">
+      <span>Ranchi (Main Studio)</span>
+      <span>Jamua, Giridih, Jharkhand</span>
+      <span>+91 91537 34410</span>
+      <span>+91 62016 54157</span>
+    </div>
+    <div class="social-links">
+      <a href="https://www.youtube.com/@thegrandmoonstudio" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12Z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/thegrandmoonstudio" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M13.5 21v-7.9h2.65l.4-3.08H13.5V8.05c0-.89.25-1.5 1.52-1.5h1.63V3.8C16.35 3.75 15.34 3.66 14.16 3.66c-2.44 0-4.11 1.49-4.11 4.23v2.36H7.4v3.08h2.65V21Z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/thegrandmoonstudio" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2c-2.7 0-3.05.01-4.12.06-1.06.05-1.79.22-2.43.47-.66.26-1.22.6-1.77 1.16-.56.55-.9 1.11-1.16 1.77-.25.64-.42 1.37-.47 2.43C2 8.95 2 9.3 2 12s.01 3.05.06 4.12c.05 1.06.22 1.79.47 2.43.26.66.6 1.22 1.16 1.77.55.56 1.11.9 1.77 1.16.64.25 1.37.42 2.43.47C8.95 22 9.3 22 12 22s3.05-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47.66-.26 1.22-.6 1.77-1.16.56-.55.9-1.11 1.16-1.77.25-.64.42-1.37.47-2.43C22 15.05 22 14.7 22 12s-.01-3.05-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.16-1.77 4.9 4.9 0 0 0-1.77-1.16c-.64-.25-1.37-.42-2.43-.47C15.05 2 14.7 2 12 2Zm0 1.8c2.65 0 2.97.01 4.02.06.97.04 1.5.2 1.85.34.46.18.8.4 1.15.75.35.35.57.68.75 1.15.14.35.3.88.34 1.85.05 1.05.06 1.37.06 4.02s-.01 2.97-.06 4.02c-.04.97-.2 1.5-.34 1.85-.18.46-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.14-.88.3-1.85.34-1.05.05-1.37.06-4.02.06s-2.97-.01-4.02-.06c-.97-.04-1.5-.2-1.85-.34a3.1 3.1 0 0 1-1.15-.75 3.1 3.1 0 0 1-.75-1.15c-.14-.35-.3-.88-.34-1.85C3.81 14.97 3.8 14.65 3.8 12s.01-2.97.06-4.02c.04-.97.2-1.5.34-1.85.18-.46.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.14.88-.3 1.85-.34C9.03 3.81 9.35 3.8 12 3.8Zm0 3.25a4.95 4.95 0 1 0 0 9.9 4.95 4.95 0 0 0 0-9.9Zm0 8.17a3.22 3.22 0 1 1 0-6.44 3.22 3.22 0 0 1 0 6.44Zm5.15-8.36a1.16 1.16 0 1 1-2.31 0 1.16 1.16 0 0 1 2.31 0Z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>© 2026 The Grandmoon Studio. All rights reserved.</span>
+  <div class="footer-social">
+    <a href="https://www.youtube.com/@thegrandmoonstudio" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12Z"/></svg>
+    </a>
+    <a href="https://www.facebook.com/thegrandmoonstudio" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M13.5 21v-7.9h2.65l.4-3.08H13.5V8.05c0-.89.25-1.5 1.52-1.5h1.63V3.8C16.35 3.75 15.34 3.66 14.16 3.66c-2.44 0-4.11 1.49-4.11 4.23v2.36H7.4v3.08h2.65V21Z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/thegrandmoonstudio" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2c-2.7 0-3.05.01-4.12.06-1.06.05-1.79.22-2.43.47-.66.26-1.22.6-1.77 1.16-.56.55-.9 1.11-1.16 1.77-.25.64-.42 1.37-.47 2.43C2 8.95 2 9.3 2 12s.01 3.05.06 4.12c.05 1.06.22 1.79.47 2.43.26.66.6 1.22 1.16 1.77.55.56 1.11.9 1.77 1.16.64.25 1.37.42 2.43.47C8.95 22 9.3 22 12 22s3.05-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47.66-.26 1.22-.6 1.77-1.16.56-.55.9-1.11 1.16-1.77.25-.64.42-1.37.47-2.43C22 15.05 22 14.7 22 12s-.01-3.05-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.16-1.77 4.9 4.9 0 0 0-1.77-1.16c-.64-.25-1.37-.42-2.43-.47C15.05 2 14.7 2 12 2Zm0 1.8c2.65 0 2.97.01 4.02.06.97.04 1.5.2 1.85.34.46.18.8.4 1.15.75.35.35.57.68.75 1.15.14.35.3.88.34 1.85.05 1.05.06 1.37.06 4.02s-.01 2.97-.06 4.02c-.04.97-.2 1.5-.34 1.85-.18.46-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.14-.88.3-1.85.34-1.05.05-1.37.06-4.02.06s-2.97-.01-4.02-.06c-.97-.04-1.5-.2-1.85-.34a3.1 3.1 0 0 1-1.15-.75 3.1 3.1 0 0 1-.75-1.15c-.14-.35-.3-.88-.34-1.85C3.81 14.97 3.8 14.65 3.8 12s.01-2.97.06-4.02c.04-.97.2-1.5.34-1.85.18-.46.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.14.88-.3 1.85-.34C9.03 3.81 9.35 3.8 12 3.8Zm0 3.25a4.95 4.95 0 1 0 0 9.9 4.95 4.95 0 0 0 0-9.9Zm0 8.17a3.22 3.22 0 1 1 0-6.44 3.22 3.22 0 0 1 0 6.44Zm5.15-8.36a1.16 1.16 0 1 1-2.31 0 1.16 1.16 0 0 1 2.31 0Z"/></svg>
+    </a>
+  </div>
+  <span class="footer-moon" aria-hidden="true"></span>
+</footer>
+
+</body>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+</html>

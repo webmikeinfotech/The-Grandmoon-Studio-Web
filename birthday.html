@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <!-- Your Main CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    /* =========================================
+       EVENT PAGE
+       Ajay & PUJA WEDDING
+    ========================================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #0d0d0d;
+      color: #fff;
+      font-family: "Jost", sans-serif;
+    }
+
+
+    /* =========================================
+       NAVBAR
+    ========================================= */
+
+    .event-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      z-index: 1000;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 5%;
+
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0)
+      );
+    }
+
+    .event-logo {
+      color: #fff;
+      text-decoration: none;
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    .event-home {
+      color: #fff;
+      text-decoration: none;
+
+      padding: 10px 20px;
+
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 30px;
+
+      font-size: 13px;
+      letter-spacing: 1px;
+
+      transition: 0.3s ease;
+    }
+
+    .event-home:hover {
+      background: #fff;
+      color: #111;
+    }
+
+
+    /* =========================================
+       FULL SCREEN VIDEO HERO
+    ========================================= */
+
+    .event-video-hero {
+      position: relative;
+
+      width: 100%;
+      height: 100vh;
+      min-height: 650px;
+
+      overflow: hidden;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .event-video-hero video {
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      top: 0;
+      left: 0;
+
+      z-index: 1;
+    }
+
+    .event-video-overlay {
+      position: absolute;
+
+      inset: 0;
+
+      z-index: 2;
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,0.55),
+          rgba(0,0,0,0.18) 45%,
+          rgba(0,0,0,0.75)
+        );
+    }
+
+    .event-video-content {
+      position: relative;
+
+      z-index: 3;
+
+      text-align: center;
+
+      padding: 20px;
+
+      max-width: 900px;
+    }
+
+    .event-small-title {
+      margin: 0 0 15px;
+
+      font-size: 12px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+
+      color: rgba(255,255,255,0.9);
+    }
+
+    .event-video-content h1 {
+      margin: 0;
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(60px, 9vw, 125px);
+
+      font-weight: 500;
+
+      line-height: 0.95;
+
+      letter-spacing: 2px;
+    }
+
+    .event-video-content .event-subtitle {
+      margin-top: 25px;
+
+      font-size: 15px;
+
+      letter-spacing: 4px;
+
+      text-transform: uppercase;
+    }
+
+    .scroll-down {
+      display: inline-block;
+
+      margin-top: 45px;
+
+      color: #fff;
+      text-decoration: none;
+
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      opacity: 0.85;
+    }
+
+    .scroll-arrow {
+      display: block;
+
+      margin-top: 12px;
+
+      font-size: 22px;
+    }
+
+
+    /* =========================================
+       EVENT DETAILS
+    ========================================= */
+
+    .event-details {
+      padding: 110px 8%;
+
+      text-align: center;
+
+      background: #111;
+    }
+
+    .section-label {
+      margin: 0 0 15px;
+
+      font-size: 11px;
+      letter-spacing: 4px;
+
+      color: #aaa;
+
+      text-transform: uppercase;
+    }
+
+    .event-details h2 {
+      margin: 0;
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(45px, 6vw, 80px);
+
+      font-weight: 500;
+    }
+
+    .event-details-line {
+      width: 70px;
+      height: 1px;
+
+      background: rgba(255,255,255,0.5);
+
+      margin: 30px auto;
+    }
+
+    .event-description {
+      max-width: 720px;
+
+      margin: auto;
+
+      font-size: 16px;
+
+      line-height: 1.9;
+
+      color: #c8c8c8;
+    }
+
+    .event-info {
+      max-width: 800px;
+
+      margin: 60px auto 0;
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 25px;
+    }
+
+    .event-info-box {
+      padding: 30px 20px;
+
+      border: 1px solid rgba(255,255,255,0.12);
+
+      background: rgba(255,255,255,0.025);
+    }
+
+    .event-info-box span {
+      display: block;
+
+      margin-bottom: 10px;
+
+      font-size: 11px;
+
+      letter-spacing: 3px;
+
+      color: #999;
+
+      text-transform: uppercase;
+    }
+
+    .event-info-box strong {
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 25px;
+
+      font-weight: 500;
+    }
+
+
+    /* =========================================
+       PHOTO GALLERY
+    ========================================= */
+
+    .event-gallery-section {
+      padding: 110px 5%;
+
+      background: #0d0d0d;
+    }
+
+    .gallery-heading {
+      text-align: center;
+
+      margin-bottom: 60px;
+    }
+
+    .gallery-heading h2 {
+      margin: 0;
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(45px, 6vw, 75px);
+
+      font-weight: 500;
+    }
+
+    .gallery-grid {
+      max-width: 1400px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .gallery-item {
+      position: relative;
+
+      overflow: hidden;
+
+      background: #181818;
+
+      aspect-ratio: 4 / 5;
+    }
+
+    .gallery-item.wide {
+      grid-column: span 2;
+
+      aspect-ratio: 16 / 9;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+
+      display: block;
+
+      object-fit: cover;
+
+      transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+
+      filter: brightness(0.75);
+    }
+
+    .gallery-caption {
+      position: absolute;
+
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      padding: 35px 25px 22px;
+
+      background: linear-gradient(
+        transparent,
+        rgba(0,0,0,0.8)
+      );
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 22px;
+
+      opacity: 0;
+
+      transform: translateY(10px);
+
+      transition: 0.4s ease;
+    }
+
+    .gallery-item:hover .gallery-caption {
+      opacity: 1;
+
+      transform: translateY(0);
+    }
+
+
+    /* =========================================
+       VIDEO SECTION
+    ========================================= */
+
+    .event-film-section {
+      padding: 110px 5%;
+
+      background: #111;
+
+      text-align: center;
+    }
+
+    .event-film-section h2 {
+      margin: 0 0 45px;
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(45px, 6vw, 75px);
+
+      font-weight: 500;
+    }
+
+    .event-film {
+      max-width: 1200px;
+
+      margin: auto;
+
+      background: #000;
+    }
+
+    .event-film video {
+      width: 100%;
+
+      display: block;
+
+      max-height: 700px;
+    }
+
+
+    /* =========================================
+       BACK TO HOME
+    ========================================= */
+
+    .back-home-section {
+      padding: 100px 20px;
+
+      text-align: center;
+
+      background: #0d0d0d;
+    }
+
+    .back-home-button {
+      display: inline-block;
+
+      padding: 16px 35px;
+
+      border: 1px solid rgba(255,255,255,0.55);
+
+      color: #fff;
+
+      text-decoration: none;
+
+      font-size: 12px;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      transition: 0.3s ease;
+    }
+
+    .back-home-button:hover {
+      background: #fff;
+
+      color: #111;
+    }
+
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+
+    .event-footer {
+      padding: 30px 20px;
+
+      text-align: center;
+
+      border-top: 1px solid rgba(255,255,255,0.08);
+
+      color: #777;
+
+      font-size: 12px;
+
+      letter-spacing: 1px;
+
+      background: #0d0d0d;
+    }
+
+
+    /* =========================================
+       MOBILE
+    ========================================= */
+
+    @media (max-width: 800px) {
+
+      .event-nav {
+        height: 70px;
+
+        padding: 0 20px;
+      }
+
+      .event-logo {
+        font-size: 19px;
+      }
+
+      .event-home {
+        padding: 8px 14px;
+
+        font-size: 11px;
+      }
+
+      .event-video-hero {
+        min-height: 600px;
+      }
+
+      .event-video-content h1 {
+        font-size: 65px;
+      }
+
+      .event-info {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item.wide {
+        grid-column: span 1;
+
+        aspect-ratio: 4 / 5;
+      }
+
+      .gallery-caption {
+        opacity: 1;
+
+        transform: translateY(0);
+      }
+
+      .event-details,
+      .event-gallery-section,
+      .event-film-section {
+        padding-top: 80px;
+
+        padding-bottom: 80px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================================
+       NAVBAR
+  ========================================== -->
+
+  <nav class="event-nav">
+
+    <a href="index.html" class="event-logo">
+      THE GRANDMOON STUDIO
+    </a>
+
+    <a href="index.html" class="event-home">
+      ← Back to Home
+    </a>
+
+  </nav>
+
+
+
+  <!-- =========================================
+       FULL SCREEN VIDEO HEADER
+  ========================================== -->
+
+  <header class="event-video-hero">
+
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="wedding1.jpg"
+    > 
+
+    <!-- AUTO VIDEO PLAY INPUT  -->
+
+      <source
+        src="Birthreel.mp4"
+        type="video/mp4"
+      >
+
+      Your browser does not support HTML5 video.
+
+    </video>
+
+
+    <div class="event-video-overlay"></div>
+
+
+    <div class="event-video-content">
+
+      <p class="event-subtitle">
+        Birthday Photography
+      </p>
+
+      <a href="#details" class="scroll-down">
+        Explore Story
+        <span class="scroll-arrow">↓</span>
+      </a>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =========================================
+       EVENT DETAILS
+  ========================================== -->
+
+  <section class="event-details" id="details">
+
+    <p class="section-label">
+      The Birthday
+    </p>
+
+    <h2>
+      Lettile Aarab
+    </h2>
+
+    <div class="event-details-line"></div>
+
+    <p class="event-description">
+
+      A beautiful wedding story captured by
+      <strong>The Grandmoon Studio</strong>.
+
+      From precious moments to timeless portraits,
+      every frame tells a part of their special journey.
+
+    </p>
+
+
+    <div class="event-info">
+
+      <div class="event-info-box">
+
+        <span>
+          Event
+        </span>
+
+        <strong>
+          Birthday
+        </strong>
+
+      </div>
+
+
+      <div class="event-info-box">
+
+        <span>
+          types
+        </span>
+
+        <strong>
+          Treditional
+        </strong>
+
+      </div>
+
+
+      <div class="event-info-box">
+
+        <span>
+          Studio
+        </span>
+
+        <strong>
+          The Grandmoon Studio
+        </strong>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================
+       PHOTO GALLERY
+  ========================================== -->
+
+  <section class="event-gallery-section">
+
+    <div class="gallery-heading">
+
+      <p class="section-label">
+        Selected Moments
+      </p>
+
+      <h2>
+        Birthday Gallery
+      </h2>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+
+      <!-- PHOTO 1 -->
+
+      <figure class="gallery-item wide">
+        <img
+          src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Birthday3.jpg"
+        >
+      </figure>
+
+      <!-- PHOTO 2 -->
+
+      <figure class="gallery-item">
+        <img
+          src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Birthday2.jpg"
+        >
+      </figure>
+        <!-- PHOTO 3 -->
+
+      <figure class="gallery-item">
+        <img
+          src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Birthday1.jpg"
+        >
+      </figure>
+
+      <!-- PHOTO 4 -->
+
+      <figure class="gallery-item wide">
+
+        <img
+          src="https://ik.imagekit.io/knkwzuuxi/The%20Grandmoon%20Studio/Birthday4.jpg"
+        >
+      </figure>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================
+       WEDDING FILM
+  ========================================== -->
+
+  <section class="event-film-section">
+
+    <h2>
+      Their Story
+    </h2>
+
+
+    <div class="event-film">
+
+      <video
+        controls
+        preload="metadata"
+        poster="wedding1.jpg"
+      >
+
+        <source
+          src="Birthreel.mp4"
+          type="video/mp4"
+        >
+
+        Your browser does not support HTML5 video.
+
+      </video>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================
+       BACK TO HOME
+  ========================================== -->
+
+  <section class="back-home-section">
+
+    <a
+      href="index.html"
+      class="back-home-button"
+    >
+      ← Back to Home
+    </a>
+
+  </section>
+
+
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
+  <footer class="event-footer">
+
+    © 2026 The Grandmoon Studio
+    · Wedding Photography &amp; Films
+
+  </footer>
+
+
+</body>
+</html>
